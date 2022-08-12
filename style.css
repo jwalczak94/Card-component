@@ -1,45 +1,139 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
+body {
   background-color: hsl(217, 54%, 11%);
   font-family: 'Outfit', sans-serif;
-  color: white;
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
 }
 
 .mainbox {
   background-color: hsl(216, 50%, 16%);
-  text-align: center;
   border-radius: 15px;
-  width: 300px;
-  height: 550px;
+  width: 350px;
+  height: 600px;
+  text-align: left;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 25px;
 }
 
-img {
-  border-radius: 10px;
-  width: 100%;
+.cube {
+  width: 310px;
+  height: 50%;
+  margin: 20px;
+  border-radius: 20px;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.cube>div {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  border-radius: 20px;
+}
+
+.cube>div:hover {
+  background-color: hsl(178, 100%, 50%, 0.50);
+}
+
+.cube:hover {
+  background-image: url(./images/icon-view.svg), url(./images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: center, 0 0;
+}
+
 
 h1 {
   font-size: 24px;
-  text-align: left;
-  margin: 20px 0;
+  margin: 10px 20px;
+  color: white;
 }
 
-p {
-  color: hsl(215, 51%, 70%);
-  font-size: 18px;
-  text-align: left;
+p.text {
+  font-weight: 300;
+  margin: 20px;
 }
 
+.middle-box {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+}
 
-hr {
-  color: hsl(215, 32%, 27%);
+.eth-img {
+  float: left;
+  margin-right: 10px;
+  padding-top: 3px;
+}
+
+.eth {
+  float: left;
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+}
+
+.clock-img {
+  float: right;
+  margin-right: 10px;
+  padding-top: 3.5px;
+}
+
+.clock {
+  float: right;
+  font-weight: 300;
+}
+
+.avatar {
+  margin-right: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 10%;
+  float: left;
+}
+
+.jules {
+  border-top: 1px solid hsl(215, 51%, 70%);
+  font-size: 0.90em;
+  font-weight: 300;
+  margin: 20px;
+  padding-top: 15px;
+  line-height: 30px;
+}
+
+.name {
+  color: white;
+}
+
+h1:hover,
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .mainbox {
+    width: 320px;
+    height: 550px;
+  }
+
+  .cube {
+    width: 280px;
+  }
+
+  p.text {
+    font-size: 16px;
+  }
 }
