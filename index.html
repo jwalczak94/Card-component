@@ -4,35 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
-
 </head>
 
 <body>
-  <div class="mainbox">
-    <div class="cube">
-      <div></div>
-    </div>
-    <h1>Equilibrium #3429</h1>
-    <p class="text">Our Equilibrium collection promotes balance and calm.</p>
+  <main class="container">
+    <section id="box-1">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium">
+    </section>
 
-    <div class="middle-box">
-      <img class="eth-img" src="./images/icon-ethereum.svg" alt="eth">
-      <p class="eth">0.041 ETH</p>
-      <p class="clock">3 days left</p>
-      <img class="clock-img" src="./images/icon-clock.svg" alt="clock">
-    </div>
+    <section id="box-text">
+      <h1 class="white-text">Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
 
-    <div class="jules">
-      <img class="avatar" src="./images/image-avatar.png" alt="avatar">
-      <p> Creation of <span class=name>Jules Wyvern</span>
-      </p>
-    </div>
-  </div>
+      <div class="info">
+        <div class="info-box cyan-text">
+          <img src="./images/icon-ethereum.svg" alt="eth">
+          <span>0.041 ETH</span>
+        </div>
+        <div class="info-box">
+          <img src="./images/icon-clock.svg" alt="clock">
+          <span>3 days left</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="box-author">
+      <img id="img-avatar" src="./images/image-avatar.png" alt="avatar">
+      <p> Creation of <span class="white-text">Jules Wyvern</span>
+    </section>
+  </main>
 </body>
 
 </html>
