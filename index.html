@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | NFT preview card component</title>
-</head>
-
-<body>
-  <main class="container">
-    <div id="box-1">
-      <img src="./images/image-equilibrium.jpg" alt="Equilibrium">
-    </div>
-
-    <div id="box-text">
-      <h1 class="white-text">Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-
-      <div class="info">
-        <div class="info-box cyan-text">
-          <img src="./images/icon-ethereum.svg" alt="eth">
-          <span>0.041 ETH</span>
+  <body>
+    <main class="container">
+      <div class="card-component">
+        <div class="card-component__img">
+          <img src="./images/image-equilibrium.jpg" alt="Equilibrium" aria-hidden="true" />
+          <div class="overlay"></div>
         </div>
-        <div class="info-box">
-          <img src="./images/icon-clock.svg" alt="clock">
-          <span>3 days left</span>
+
+        <div class="card-component__description">
+          <div class="text-box">
+            <a class="text-white text-lead" href="#">Equilibrium #3429</a>
+            <p class="text-medium">Our Equilibrium collection promotes balance and calm.</p>
+          </div>
+
+          <div class="info-box">
+            <div class="info-box__content">
+              <img src="./images/icon-ethereum.svg" alt="" aria-hidden="true" />
+              <p class="text-cyan text-small">0.041 ETH</p>
+            </div>
+            <div class="info-box__content">
+              <img src="./images/icon-clock.svg" alt="" aria-hidden="true" />
+              <p class="text-small">3 days left</p>
+            </div>
+          </div>
+
+          <div class="author-box">
+            <img src="./images/image-avatar.png" alt="" aria-hidden="true" />
+            <p class="text-small">Creation of <a class="text-white" href="#">Jules Wyvern</a></p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div id="box-author">
-      <img id="img-avatar" src="./images/image-avatar.png" alt="avatar">
-      <p> Creation of <span class="white-text">Jules Wyvern</span>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
